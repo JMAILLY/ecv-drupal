@@ -1,0 +1,11 @@
+name: Drupal
+recipe: drupal8
+config:
+  php: '7.3'
+  webroot: web
+
+
+# Additional services
+services:
+  pma:
+    type: phpmyadmin
