@@ -27,6 +27,7 @@
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/devel": "~1.0",
         "drupal/formblock": "^1.0@beta",
+        "drupal/metatag": "^1.13",
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.6",
         "drupal/webform": "^5.9",

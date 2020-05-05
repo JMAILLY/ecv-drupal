@@ -1,0 +1,28 @@
+.post{
+  margin: 100px 0;
+  &-header{
+    display: flex;
+    margin-bottom: 50px;
+    img{
+      width: 300px;
+      height: auto;
+    }
+    h1{
+      color: $custom-color-orange;
+      line-height: 1.5;
+    }
+  }
+  &-header-text{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-content{
+    font-size: 14px;
+    line-height: 28px;
+    img{
+      margin: 15px auto;
+    }
+  }
+}

@@ -1,6 +1,14 @@
-<article>
-<h1>title</h1>
-  <div>
-    {{ content }}
+<article class="post">
+  <div class="container container-min">
+    <div class="post-header">
+      {{ content.field_image }}
+      <div class="post-header-text">
+        <h1 class="h1-title">{{title}}</h1>
+        {{ node.getCreatedTime|date('d/m/yy') }}
+      </div>
+    </div>
+    <div class="post-content">
+      {{ content.body }}
+    </div>
   </div>
 </article>
