@@ -1,0 +1,61 @@
+// Layout
+$wrapperMax: 1400px;
+$wrapperMin: 1260px;
+
+// Wrapper
+@mixin wrapper($wrap: 'max') {
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @if $wrap == 'max' {
+    max-width: $wrapperMax;
+  } @else if $wrap == 'min' {
+    max-width: $wrapperMin;
+  } @else {
+    max-width: $wrap;
+  }
+}
+
+// Colors
+$custom-color-orange: #FF9601;
+$custom-color-text: #5C5C5C;
+
+
+// Base
+*{
+  box-sizing: border-box;
+}
+
+.container-max{
+  @include wrapper(max);
+}
+
+.container-min{
+  @include wrapper(min);
+}
+
+.h1-title {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.h2-title {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.h3-title {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+p {
+  color: $custom-color-text;
+  font-size: 14px;
+}
+
+a:hover{
+  text-decoration: underline;
+}

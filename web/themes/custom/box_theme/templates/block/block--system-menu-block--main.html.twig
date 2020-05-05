@@ -1,0 +1,14 @@
+
+{% set heading_id = attributes.id ~ '-menu'|clean_id %}
+<nav class="nav" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+  <img src="/themes/custom/box_theme/dist/img/logo.svg" alt="retour à l'accueil">
+  {# Menu. #}
+  <div class="nav-right">
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+    <a href="/users/login" class="nav-login" title="connexion">
+      Login in
+    </a>
+  </div>
+</nav>

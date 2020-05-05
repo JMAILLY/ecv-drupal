@@ -1,0 +1,22 @@
+name: ecv-drupal
+type: theme
+description: 'Drupal theme'
+package: Other
+core: 8.x
+libraries:
+  - ecv_drupal/ecv_drupal
+
+#libraries-override:
+#  system/base: false
+#stylesheets-remove:
+#  - '@stable/css/style.css'
+
+base theme: stable
+
+regions:
+  header: 'Header'
+  navigation: 'Navigation'
+  content: 'Content'
+  footer: 'Footer'
+
+screenshot: index.jpg

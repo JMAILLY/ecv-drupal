@@ -1,0 +1,32 @@
+.banner{
+  background: linear-gradient(234.02deg, #FFC000 1.55%, #FF8A00 95.8%);
+  margin-bottom: 150px;
+  .container{
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+  }
+  &-text-container,
+  &-img-container{
+    width: 50%;
+  }
+  &-text-container{
+    color: white;
+  }
+  &-img-container > div{
+    display: flex;
+    justify-content: center;
+  }
+  p{
+    color: white;
+    line-height: 32px;
+    font-size: 18px;
+  }
+  h1{
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  strong{
+    font-weight: 900;
+  }
+}

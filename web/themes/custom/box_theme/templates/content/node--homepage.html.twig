@@ -1,0 +1,43 @@
+<section class="banner">
+  <div class="container container-max">
+    <div class="banner-text-container">
+      <h1 class="h1-title">{{ content.field_title_page }}</h1>
+      {{ content.field_undertitle_page }}
+    </div>
+    <div class="banner-img-container">
+      {{ content.field_image_principale }}
+    </div>
+  </div>
+</section>
+<section class="catchphrase">
+  <div class="container container-min">
+    <div class="catchphrase-img-container">
+      {{ content.field_catchphrase_image }}
+    </div>
+    <div class="catchphrase-text-container">
+      <h2 class="h2-title">{{ content.field_catchphrase }}</h2>
+      {{ content.field_catchphrase_text }}
+      {{ content.field_catchphrase_link }}
+    </div>
+  </div>
+</section>
+<section class="pricing">
+  <div class="container container-min">
+    <h2 class="h2-title">{{ content.field_title_pricing }}</h2>
+    <div class="pricing-card-container">
+      {{ content.field_block_pricing }}
+    </div>
+  </div>
+  {{ content.field_bouton_pricing }}
+</section>
+<section class="news">
+  <div class="container container-min">
+    <h2 class="h2-title">{{ content.field_title_news }}</h2>
+    <div class="news-cards">
+      {{ lasts_news }}
+    </div>
+    <div class="news-button">
+      {{ content.field_bouton_blog }}
+    </div>
+  </div>
+</section>

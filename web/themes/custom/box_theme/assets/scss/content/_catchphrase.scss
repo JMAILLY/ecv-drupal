@@ -1,0 +1,31 @@
+.catchphrase{
+  margin-bottom: 150px;
+  .container{
+    display: flex;
+  }
+  &-text-container{
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h2{
+    color: orange;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  p{
+    line-height: 1.7;
+    margin-bottom: 50px;
+  }
+  a{
+    background-color: $custom-color-orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    border-radius: 50px;
+    color: white;
+    width: 160px;
+  }
+}

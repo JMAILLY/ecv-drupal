@@ -1,0 +1,97 @@
+/*------------------------------
+
+    PREFOOTER
+
+-------------------------------*/
+
+.prefooter {
+  background-color: #FFF5D8;
+  .container{
+    display: flex;
+    padding: 50px 0 100px 0;
+    justify-content: space-evenly;
+  }
+  &-content{
+    display: flex;
+    flex-direction: column;
+  }
+  &-titre{
+    color: $custom-color-orange;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+  &-contact{
+    label{
+      display: none;
+    }
+    form{
+      display: flex;
+    }
+    input{
+      height: 55px;
+      border-radius: 50px;
+      border: 0;
+      box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.2);
+    }
+    .field--type-email input{
+      padding: 5px 25px;
+    }
+    #edit-submit{
+      min-width: 160px;
+      background-color: $custom-color-orange;
+      color: white;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+  p{
+    line-height: 1.758;
+  }
+}
+
+/*------------------------------
+
+    FOOTER
+
+-------------------------------*/
+
+.footer {
+  background-color: #212121;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  p{
+    color: white;
+  }
+  b{
+    color: white;
+    font-size: 14px;
+  }
+  ul{
+    display: flex;
+  }
+  li{
+    margin-left: 15px;
+  }
+  a{
+    color: white;
+
+  }
+}
+
+
+
+
+/*------------------------------
+
+	MEDIA QUERIES
+
+-------------------------------*/
+@media screen and (max-width: 800) {
+
+	.footer {
+
+	}
+}

@@ -1,0 +1,67 @@
+.pricing{
+  margin-bottom: 150px;
+  h2{
+    color: $custom-color-orange;
+    margin-bottom: 50px;
+  }
+  h3{
+    color: $custom-color-text;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 25px;
+  }
+  &-card-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-card{
+    width: 275px;
+    height: 500px;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    padding: 30px;
+  }
+  &-card-price{
+    color: $custom-color-orange;
+    font-size: 80px;
+    line-height: 1.7;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &-card-monthly{
+    font-size: 14px;
+    color: $custom-color-text;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  &-card-list{
+    li{
+      margin-bottom: 15px;
+      color: $custom-color-text;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      &:before{
+        content:'';
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: url(/themes/custom/box_theme/dist/img/check.png) center center/12px 12px no-repeat;
+        margin-right: 10px;
+      }
+    }
+  }
+  a{
+    background-color: $custom-color-orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    border-radius: 50px;
+    color: white;
+    width: 160px;
+    margin: 50px auto 0 auto;
+  }
+}

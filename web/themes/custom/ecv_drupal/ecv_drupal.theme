@@ -1,0 +1,33 @@
+<?php
+
+use \Drupal\block\Entity\Block;
+
+// Hook preprocess node
+function ecv_drupal_preprocess_page(&$variables)
+{
+
+  //Load du block
+  $block = Block::load('navigationprincipale');
+  //assignation de la variable pour le template
+  $variables['nav_principal'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+}
+
+// Hook preprocess  page
+function ecv_drupal_preprocess_node(&$variables)
+{
+
+  $variables['title'] = $variables['label'];
+
+//  Load du block motor
+  $block = Block::load('views_block__blog_moteur_block');
+  $variables['views_block__blog_moteur_block'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+
+  // Créer un type de contenu Blog Accueil (nom system : blog_home)
+  // champs (nom machine) : title, body, subtitle, image_header
+  // Réécrire template de node qui corespond à ce type de contenu
+  // Créer cette page
+  // Print block
+
+}
+
+
