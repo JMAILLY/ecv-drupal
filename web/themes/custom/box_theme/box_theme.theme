@@ -37,8 +37,14 @@ function box_theme_preprocess_node(&$variables){
    $lasts_news = Block::load('views_block__last_articles_block_1');
    $variables['lasts_news'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($lasts_news);
 
-}
+   $block = Block::load('views_block__blog_moteur_block');
+   $variables['views_block__blog_moteur_block'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
 
+  $block = Block::load('views_block__related_articles_block_1');
+  $variables['views_block__related_articles_block_1'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+
+
+}
 
 /*********************************************
     PREPROCESS HTML

@@ -25,4 +25,25 @@
       margin: 15px auto;
     }
   }
+  h2{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.5;
+    color: $custom-color-orange;
+    margin-bottom: 25px;
+  }
+  .post-related > div > div{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .post-related{
+    margin-top: 50px;
+    .views-row{
+      flex: 1 0 33%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+      max-width: 33%;
+    }
+  }
 }

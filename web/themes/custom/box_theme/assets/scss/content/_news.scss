@@ -9,25 +9,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .news-card {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .news-card img{
-    width: 300px;
-    height: 275px;
-  }
-  span{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: $custom-color-orange;
-    color: white;
-    font-weight: 900;
-    width: 100%;
-    padding: 15px 0 40px 30px;
-  }
+
   &-button a{
     background-color: $custom-color-orange;
     display: flex;
@@ -39,4 +21,25 @@
     width: 160px;
     margin: 100px auto 0 auto;
   }
+}
+.news-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  height: 275px;
+  span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $custom-color-orange;
+    color: white;
+    font-weight: 900;
+    width: 100%;
+    padding: 15px 0 40px 30px;
+  }
+}
+.news-card img{
+  width: 300px;
+  height: 275px;
 }

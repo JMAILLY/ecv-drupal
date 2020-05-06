@@ -1,0 +1,12 @@
+.video{
+  padding: 50px 0;
+  &-text{
+    text-align: center;
+  }
+  .video-embed-field-provider-youtube{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+}
